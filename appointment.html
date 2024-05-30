@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book an Appointment</title>
+  <link rel="stylesheet" href="styles2.css">
+</head>
+<body>
+  <header>
+  <div class="logo">
+     <img src="hospital_logo.png" alt="Hospital Logo" >
+  </div>
+    <h1>City Hospitals</h1>
+    <nav>
+      <ul>
+        <li><a href="homepage.html">Home</a></li>
+        <li><a href="homepage.html#about">About</a></li>
+        <li><a href="homepage.html#services">Services</a></li>
+        <li><a href="homepage.html#doctors">Doctors</a></li>
+        <li><a href="homepage.html#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="appointment-section">
+    <div class="appointment-content">
+      <form action="process.php" method="POST">
+      <Fieldset>
+      <legend><h2>Book an Appointment</h2></legend>
+      <table >
+      <tr height = 40>
+        <td width = 160><label for="name">Name:</label></td>
+        <td width= 20>:</td>
+        <td><input type="text" id="name" name="name" required></td>
+      </tr>
+      
+      
+      <tr height = 40>
+        <td><label for="email">Email</label></td>
+        <td>:</td>
+        <td><input type="email" id="email" name="email" required>
+      </tr>
+
+      <tr height = 40>
+        <td><label for="phone">Phone</label></td>
+        <td>:</td>
+        <td><input type="tel" id="phone" name="phone" required></td>
+      </tr>
+      
+      <tr height = 40>
+        <td><label for="service">Select a Service</label> </td>
+        <td>:</td>
+        <td><select id="service" name="service" required>
+          <option value="">Choose a service</option>
+          <option value="laboratory">Laboratory Service</option>
+          <option value="emergency">24 Hours Emergency Care</option>
+          <option value="channeling">Channeling Servise</option>
+          <option value="dental">Dental Care</option>
+          <option value="skin">Skin Care</option>
+          <option value="eye">Eye Care</option>
+        </select>
+        </td>
+      </tr>
+	  
+	  <tr height = 40>
+        <td><label for="branch">Select a Branch</label> </td>
+        <td>:</td>
+        <td><select id="branch" name="branch" required>
+          <option value="">Choose a branch</option>
+          <option value="Jaffna">Jaffna</option>
+          <option value="Galle">Galle</option>
+          <option value="Kurunegala">Kurunegala</option>
+          
+        </select>
+        </td>
+      </tr>
+      
+      <tr height = 40>
+        <td><label for="date">Select a Date</label></td>
+        <td>:</td>
+        <td><input type="date" id="date" name="date" required> </td>
+      </tr>
+      
+      <tr height = 40>
+        <td><label for="time">Select a Time</label></td>
+        <td>:</td>
+        <td><input type="time" id="time" name="time" required></td>
+      </tr>
+      
+      <tr height = 40>
+        <td><label for="message">Message</label></td>
+        <td>:</td>
+        <td><textarea id="message" name="message"></textarea></td>
+      </tr>
+      
+      <tr><td><button type="submit" class="cta-button">Book Appointment</button><td></tr>
+
+       
+        </table>
+        </Fieldset>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy;2023 City Hospital. All rights reserved.</p>
+  </footer>
+</body>
+</html>
